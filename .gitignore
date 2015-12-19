@@ -1,0 +1,7 @@
+*.js
+*.map
+
+node_modules
+typings
+localhost_49687.sln
+localhost_49687.v12.suo
