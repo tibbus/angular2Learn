@@ -2,6 +2,6 @@
 *.map
 
 node_modules
-typings
+src/dist/*
 localhost_49687.sln
 localhost_49687.v12.suo

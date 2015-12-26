@@ -13,13 +13,13 @@
     <script>
       System.config({
         packages: {        
-          app: {
+          src: {
             format: 'register',
             defaultExtension: 'js'
           }
         }
       });
-      System.import('app/boot')
+      System.import('src/dist/src/dev/boot')
             .then(null, console.error.bind(console));
     </script>
 
