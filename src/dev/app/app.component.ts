@@ -2,7 +2,6 @@
 import {HeroFormComponent} from './form/hero-form.component';
 import {BirthdayOne} from './birthday/birthday-one.component';
 import {PowerBoostCalculator} from './power/boost-calculator.component';
-import {HeroAsyncMessageComponent} from './statefull/apphero-async-message.component';
 
 @Component({
     selector: 'my-app',
@@ -11,7 +10,7 @@ import {HeroAsyncMessageComponent} from './statefull/apphero-async-message.compo
                <power-boost-calculator></power-boost-calculator>
                <hero-message></hero-message>
               `,
-    directives: [HeroFormComponent, BirthdayOne, PowerBoostCalculator, HeroAsyncMessageComponent]
+    directives: [HeroFormComponent, BirthdayOne, PowerBoostCalculator]
 })
 
 export class AppComponent { }
