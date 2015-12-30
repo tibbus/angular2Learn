@@ -4,7 +4,7 @@ import {HeroService} from './heroes/hero.service';
 import {Hero} from './hero';
 
 import {HeroDetailComponent} from './heroes/hero-detail.component';
-import {CrisisListComponent}   from './crisis-list.component';
+import {CrisisListComponent}   from './crisis-center/crisis-list.component';
 import {HeroListComponent}     from './heroes/hero-list.component';
 
 @Component({
