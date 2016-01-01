@@ -1,7 +1,6 @@
 ﻿import {Component, OnInit}  from 'angular2/core';
-import {HeroService}   from './hero.service';
+import {Hero, HeroService}   from './hero.service';
 import {RouteParams, Router} from 'angular2/router';
-import {Hero} from '../hero.ts';
 
 @Component({
     template: `
@@ -17,6 +16,7 @@ import {Hero} from '../hero.ts';
     <button (click)="gotoHeroes()">Back</button>
   </div>
   `,
+    providers: [HeroService]
 })
 
 export class HeroDetailComponent implements OnInit {

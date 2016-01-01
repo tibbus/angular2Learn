@@ -1,7 +1,6 @@
 ﻿// TODO SOMEDAY: Feature Componetized like HeroCenter
 import {Component, OnInit}   from 'angular2/core';
-import {HeroService}   from './hero.service';
-import {Hero} from '../hero.ts';
+import {Hero, HeroService}   from './hero.service';
 import {Router}              from 'angular2/router';
 
 @Component({
@@ -13,7 +12,8 @@ import {Router}              from 'angular2/router';
       <span class="badge">{{hero.id}}</span> {{hero.name}}
     </li>
   </ul>
-`
+`,
+providers: [HeroService]
 })
 
 export class HeroListComponent implements OnInit {

@@ -6,6 +6,5 @@ import {HeroService}      from  './app/heroes/hero.service';
 
 bootstrap(AppComponent, [
     ROUTER_PROVIDERS,
-    DialogService,
-    HeroService
+    DialogService
 ]);
