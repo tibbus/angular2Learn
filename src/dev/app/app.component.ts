@@ -1,5 +1,6 @@
 ﻿import {Component} from 'angular2/core';
 import {RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';
+import {HighlightDirective} from './highlight.directive';
 
 import {CrisisCenterComponent} from './crisis-center/crisis-center.component';
 import {HeroListComponent}     from './heroes/hero-list.component';
@@ -7,13 +8,17 @@ import {HeroDetailComponent}   from './heroes/hero-detail.component';
 
 @Component({
     selector: 'my-app',
-    template: `
-    <h1 class="title">Component Router</h1>
+    template: `<div>
+  <input type="radio" name="colors" (click)="color='lightgreen'">Green
+  <input type="radio" name="colors" (click)="color='yellow'">Yellow
+  <input type="radio" name="colors" (click)="color='cyan'">Cyan
+</div>
+    <h1 class="title" [myHighlight]="color" [defaultColor]="'violet'">Component Router</h1>
     <a [routerLink]="['CrisisCenter']">Crisis Center</a>
     <a [routerLink]="['Heroes']">Heroes</a>
     <router-outlet></router-outlet>
   `,
-    directives: [ROUTER_DIRECTIVES]
+    directives: [ROUTER_DIRECTIVES, HighlightDirective]
 })
 
 @RouteConfig([
